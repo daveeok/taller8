@@ -6,7 +6,7 @@ def text(group):
 
 def showMenu():
     print(f"""
-    ------ MENU DE VENTAS DE LA EMPRESA
+    ------ MENU DE CURSOS ------
     1. Ver información de los cursos.
     2. Agregar estudiantes.
     0. Salir.
@@ -30,12 +30,12 @@ def option1():
     Cuso A: {text(courseA)}
     Curso B: {text(courseB)}
 
-    Estudiantes diferentes en total: {len(courseA.union(courseB))}
+    Estudiantes en total: {len(courseA.union(courseB))}
     Estudiantes que están en ambos cursos: {text(courseA.intersection(courseB))}
     Estudiantes que solo estan en el curso A: {text(courseA.difference(courseB))} 
     Estudiantes que solo estan en el curso B: {text(courseB.difference(courseA))}
     Estudiantes que estan en solo uno de los 2 cursos: {text(courseA.symmetric_difference(courseB))}
-    ¿Todos los del curso A están en B? {text(courseA <= courseB)}
+    ¿Todos los del curso A están en B? {(courseA <= courseB)}
           """)
     returnMenu = input("Presione [Enter] para volver al menú")
     showMenu()

@@ -6,7 +6,7 @@ seller = [[12, 15, 10, 18],
 
 def showMenu():
     print(f"""
-    ------ MENU DE VENTAS DE LA EMPRESA
+    ------ MENU DE VENTAS DE LA EMPRESA ------
     1. Ver la información de la empresa.
     2. Cambiar las ventas de un vendedor.
     0. Salir.
